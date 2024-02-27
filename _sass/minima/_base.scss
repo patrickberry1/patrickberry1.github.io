@@ -218,8 +218,8 @@ pre {
 }
 
 .proficiency-icon {
-  width: 52px;
-  height: 52px;
+  width: 64px;
+  height: 64px;
   display: inline-block;
   fill: #{$grey-color};
   padding-right: 5px;
@@ -232,6 +232,14 @@ pre {
   }
 }
 
+
+/**
+* home
+*/
+
+.home {
+  background-image: url("../../Background.JPG");
+}
 
 
 /**
