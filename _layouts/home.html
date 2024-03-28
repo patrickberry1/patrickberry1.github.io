@@ -17,12 +17,11 @@ layout: default
       background-size: 200% auto;
       color: #fff;
       background-clip: text;
-      text-fill-color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: textclip 2s linear infinite;
-      display: inline-block;
-          font-size: 50px;
+      text-align: center;
+      font-size: xx-large;
     }
 
     @keyframes textclip {
@@ -34,23 +33,17 @@ layout: default
 
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
   <div style="background-image: url(../_site/assets/Background.JPG);">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="animate-charcter">Welcome to my site!</h3>
-        </div>
+        <h1 class="animate-charcter">Welcome To My Site</h1>
+      </div>
+      <div class="row">
+        <p style="text-align: center; font-size: large;">
+          Welcome to my home page! If you want to know more about me go to my <a href="/about/">about</a> page, or, to contact me, send me an <a class="u-email" href="mailto:{{ site.email }}">email</a> or check out my socials in the footer!
+        </p>
       </div>
     </div>
-    <p>
-      Welcome to my home page! If you want to know more about me go to my about page, or to contact me check out the footer!
-    </p>
   </div>
 
 </div>

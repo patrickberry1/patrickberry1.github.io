@@ -1,35 +1,64 @@
 ---
 layout: default
 ---
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+
+<style>
+  #angular {
+    fill: #C3002F;
+  }
+  
+  #rcorners1 {
+        border-radius: 25px;
+        background: rgba(178, 197, 231, 0.75);
+        padding: 20px;
+        width: "match-parent";
+        height: "match-parent";
+    }
+</style>
+<div class="home" id="rcorners1">
+  {%- if page.label -%}
+    <h1 class="page-heading">{{ page.label }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   <div>
     <div class="container">
-
       <div class="row">
-        Skills and proficiencies:
+        <p>
+          Hey, my name's Patrick and I'm a software developer. I graduated from Trinity College Dublin in 2018 with a Bachelor's Degree in Computer Science. After that, I worked for 3 years as a Full-Stack Software Developer at Financial Risk Solutions (FRS).
+        </p>
+        <p>
+          During my studies at Trinity College Dublin, I worked in depth with OOP Languages such as Java, learned proper coding principles and completed professional-grade projects in various languages, including writing my own compiler. You can view some of these projects here on my site by going to my <a href="/projects/">projects</a> page.
+        </p>
+        <p>
+          FRS are a Dublin-based, Irish fintech company. At FRS, I gained 3 years of experience working extensively across the full stack, with C#/VB .Net, SQL, Powershell and Angular. Some of the projects I worked on at FRS included: 
+        </p>
+        <ul>
+          <li>Performance analysis and improvement of our code and SQL scripts.</li>
+          <li>Development of a new CI/CD deployment process using Powershell and Azure.</li>
+          <li>Development of a set of new web app screens using Angular, bringing functionality not previously available to web app users.</li>
+        </ul>
       </div>
-
-      <div style="display: grid; grid-template-columns: auto auto auto; padding: 10px; margin-bottom: 10px;">
-        <div class="grid-item" style="grid-column: 1">
-          <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dotnet' | relative_url }}"></use></svg>
-        </div>
-        <div class="grid-item" style="grid-column: 2">
-          <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#csharp' | relative_url }}"></use></svg>
-        </div>
-        <div class="grid-item" style="grid-column: 1">
-          <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#angular' | relative_url }}"></use></svg>
-        </div>
-        <div class="grid-item" style="grid-column: 2">
-          <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#sql' | relative_url }}"></use></svg>
+      <div class="row">
+        <h3>Skills and proficiencies:</h3>
+      </div>
+        <div class="row">
+        <div style="display: grid; grid-template-columns: auto auto auto; padding: 10px; margin-bottom: 10px;">
+          <div class="grid-item" style="grid-column: 1; margin: 10px">
+            <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dotnet' | relative_url }}"></use></svg>
+          </div>
+          <div class="grid-item" style="grid-column: 2; margin: 10px">
+            <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#csharp' | relative_url }}"></use></svg>
+          </div>
+          <div class="grid-item" style="grid-column: 1; margin: 10px">
+            <svg id="angular" class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#angular' | relative_url }}"></use></svg>
+          </div>
+          <div class="grid-item" style="grid-column: 2; margin: 10px">
+            <svg class="proficiency-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#sql' | relative_url }}"></use></svg>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

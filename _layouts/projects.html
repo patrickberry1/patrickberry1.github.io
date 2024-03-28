@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<style>
+    #rcorners1 {
+        border-radius: 25px;
+        background: rgba(178, 197, 231, 0.75);
+        padding: 20px;
+        width: "match-parent";
+        height: "match-parent";
+    }
+</style>
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <div style="background-image: url(../_site/assets/Background.JPG);">
+    <div class="container">
+      <div class="row">
+        <div style="display: grid; grid-template-columns: auto auto auto; padding: 10px; margin: 10px;">
+            <div id="rcorners1" class="grid-item" style="grid-column: 1; margin: 10px;">
+                <h3>Timer App</h3>
+                <p>Simple android app. Intended to allow users to create and run structured timers with sets and reps. Written in Java and XML. Check it out <a href="https://github.com/patrickberry1/SimpleTimerApp" target="_blank">here</a></p>
+
+            </div>
+            <div id="rcorners1" class="grid-item" style="grid-column: 2; margin: 10px;">
+                <h3>REST API</h3>
+                <p>Simple REST API implementing basid CRUD functionality. Written in Node.js. Check it out <a href="https://github.com/patrickberry1/rest-api" target="_blank">here</a></p>
+            </div>
+            <div id="rcorners1" class="grid-item" style="grid-column: 1; margin: 10px;">
+                <h3>Video Exploration Through Semantic Annotation</h3>
+                <p>Final year project from my studies at Trinity College Dublin. Using python scripting to scrape and interpret movie script data, and HTML5 to display the annotated metadat. Check it out <a href="https://github.com/patrickberry1/FinalYearProject" target="_blank">here</a></p>
+            </div>
+            <div id="rcorners1" class="grid-item" style="grid-column: 2; margin: 10px;">
+                <h3>Final Year Group Project</h3>
+                <p>Group project from my final year of studies at Trinity College Dublin. Event scheduling web app written in python using the flask framework. Check it out <a href="https://github.com/weijielam/fy-group-project" target="_blank">here</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
